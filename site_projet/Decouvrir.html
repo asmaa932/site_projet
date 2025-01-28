@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta
+      name="description"
+      content="Découvrez le trésor ancestral du Maroc : le safran de Taliouine."
+    >
+    <title>Accueil - L'Or Rouge de Taliouine</title>
+
+    <!-- Inclusion des fichiers CSS -->
+    <link rel="stylesheet" href="Defaut.css" >
+    <link
+      rel="alternate stylesheet"
+      type="text/css"
+      href="Minimal.css"
+      title="Minimal"
+    >
+    <!-- Style par défaut -->
+    <link
+      rel="alternate stylesheet"
+      type="text/css"
+      href="Print.css"
+      title="Print"
+    >
+    <link
+      rel="alternate stylesheet"
+      type="text/css"
+      href="Modenuit.css"
+      title="Mode Sombre"
+    >
+
+    <!-- Inclusion des fichiers JS -->
+    <script src="Script.js" defer></script>
+    <script src="Recherche.js" defer></script>
+    <script src="Script_mode.js" defer></script>
+    <!-- contient le mode nuit -->
+    <!-- print et minimal -->
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="listheader">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="Utilisation.html">Utilisations et bienfaits</a></li>
+          <li><a href="Decouvrir.html">Découvrir Taliouine</a></li>
+          <li><a href="Apropos.html">À propos</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Barre de recherche -->
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Rechercher..." >
+      <button id="search-button">Rechercher</button>
+    </div>
+
+    <!-- Boutons pour changer de style -->
+    <div class="change-style">
+      <button id="mode">Mode Jour/Nuit</button>
+      <button data-style="Minimal">Minimal</button>
+      <button data-style="Print">Impression</button>
+    </div>
+
+    <!-- Boutons zoom -->
+    <div class="zoom-button">
+      <button onclick="changeFontSize('increase')">Zoom +</button>
+      <button onclick="changeFontSize('decrease')">Zoom -</button>
+    </div>
+
+    <main>
+      <section>
+        <h1>Découvrir Taliouine</h1>
+
+        <br>
+        <p>
+          <img
+            src="images/taliouinepaysage.png"
+            alt="photo du paysage de Taliouine"
+            class="img4"
+          >
+        </p>
+
+        <p>
+          Située au pied de l'Atlas marocain, Taliouine est une destination
+          unique connue pour être la capitale mondiale du safran. Cette petite
+          ville charmante offre un mélange exceptionnel de paysages
+          spectaculaires, de traditions culturelles riches et d'une ambiance
+          paisible.
+        </p>
+        <p>
+          Taliouine est entourée de montagnes majestueuses et de vallées
+          verdoyantes. Les amateurs de randonnée pourront explorer les sentiers
+          de l'Atlas, offrant des vues imprenables sur la région. Il ne faut pas
+          manquer la vallée d'Aït Bouguemez et ses villages berbères
+          traditionnels.
+        </p>
+
+        <p>
+          Située au pied de l'Atlas marocain, Taliouine est une destination
+          unique connue pour être la capitale mondiale du safran. Découvrez ses
+          paysages, son patrimoine culturel et ses traditions uniques.
+        </p>
+
+        <p>
+          Allez en bas de page pour avoir accés au plan interactif du village.
+        </p>
+
+        <br>
+
+        <h2>Les champs de safran</h2>
+        <p>
+          Taliouine est entourée de vastes champs de crocus sativus, où le
+          fameux safran est cultivé. Une visite guidée dans ces champs permet de
+          découvrir les techniques traditionnelles de culture et de récolte.
+          Entre octobre et novembre, la saison de la floraison, vous aurez
+          l'occasion de voir les fleurs en pleine récolte et même d’y
+          participer.
+        </p>
+
+        <p>
+          <img
+            src="images/champssafran.jpg"
+            alt="champs de crocus"
+            class="img2"
+          >
+        </p>
+
+        <h2>Le Musée du Safran</h2>
+        <p>
+          Le Musée du Safran est un incontournable. Vous y apprendrez tout sur
+          l’histoire du safran, son importance pour l'économie locale, et ses
+          multiples usages dans la gastronomie, la médecine et la cosmétique.
+          Des expositions interactives vous plongent dans la culture locale.
+        </p>
+
+        <h2>Les événements locaux</h2>
+        <p>
+          Chaque année, Taliouine célèbre le Festival International du Safran en
+          novembre. Cet événement rassemble des visiteurs du monde entier pour
+          célébrer cette épice précieuse. Vous pourrez y déguster des plats
+          locaux, assister à des démonstrations de cuisine et profiter de
+          spectacles de musique traditionnelle.
+        </p>
+
+        <h2>L'artisanat et les marchés</h2>
+        <p>
+          Promenez-vous dans les marchés de Taliouine pour découvrir des
+          produits artisanaux uniques : tapis berbères, poteries et, bien sûr,
+          des sachets de safran pur. Ces marchés sont un excellent moyen de
+          rencontrer les habitants et de ramener chez vous un morceau de cette
+          culture vibrante.
+        </p>
+
+        <p>
+          Taliouine n’est pas seulement la capitale du safran, mais aussi un
+          lieu où l’hospitalité, la tradition et la beauté naturelle se
+          rencontrent pour offrir une expérience inoubliable. Préparez vos
+          bagages et laissez-vous envoûter par cette perle de l’Atlas marocain.
+        </p>
+      </section>
+
+      <section>
+        <h1>Carte de Taliouine</h1>
+
+        <p>Explorez la région de Taliouine via cette carte interactive</p>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d832480.9328399284!2d-8.54360029193617!3d30.52660673427296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdad57448b2c3ddf%3A0x70599489e515e84!2sTaliouine%2C%20Maroc!5e0!3m2!1sfr!2sfr!4v1672258509243!5m2!1sfr!2sfr"
+            width="1000"
+            height="420"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </section>
+    </main>
+
+    <!--<div class="av-apbutton" >
+    <FORM METHOD="post">
+<INPUT TYPE="button" VALUE="Précédent"
+onClick="goHist(-1)">
+<INPUT TYPE="button" VALUE="Suivant"
+onClick="goHist(1)">
+</FORM>
+</div>-->
+
+    <footer>
+      <p class="footer">&copy; 2025 - L'Or Rouge de Taliouine</p>
+    </footer>
+  </body>
+</html>

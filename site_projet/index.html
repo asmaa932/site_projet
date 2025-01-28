@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez le trésor ancestral du Maroc : le safran de Taliouine.">
+    <title>Accueil - L'Or Rouge de Taliouine</title>
+
+    <!-- Inclusion des fichiers CSS -->
+    <link rel="stylesheet" href="Defaut.css" >
+    <!-- Style par défaut -->
+    <link
+      rel="alternate stylesheet"
+      type="text/css"
+      href="Print.css"
+      title="Print"
+    >
+    <link
+      rel="alternate stylesheet"
+      type="text/css"
+      href="Modenuit.css"
+      title="Mode Sombre"
+    >
+    <link
+      rel="alternate stylesheet"
+      type="text/css"
+      href="Minimal.css"
+      title="Minimal"
+    >
+
+    <!-- Inclusion des fichiers JS -->
+    <script src="Script.js" defer></script>
+    <script src="Recherche.js" defer></script>
+    <script src="Script_mode.js" defer></script>
+    <!-- print et minimal -->
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="listheader">
+          <li><a href="Accueil.html">Accueil</a></li>
+          <li><a href="Utilisation.html">Utilisations et bienfaits</a></li>
+          <li><a href="Decouvrir.html">Découvrir Taliouine</a></li>
+          <li><a href="Apropos.html">À propos</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Barre de recherche -->
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Rechercher..." >
+      <button id="search-button">Rechercher</button>
+    </div>
+
+    <!-- Boutons pour changer de style -->
+    <div class="change-style">
+      <button id="mode">Mode Jour/Nuit</button>
+      <button data-style="Minimal">Minimal</button>
+      <button data-style="Print">Impression</button>
+    </div>
+
+    <!-- Boutons zoom -->
+    <div class="zoom-button">
+      <button onclick="changeFontSize('increase')">Zoom +</button>
+      <button onclick="changeFontSize('decrease')">Zoom -</button>
+    </div>
+
+    <main>
+      <section class="classsection">
+        <h1>L'Or Rouge de Taliouine</h1>
+        <p class="slogan">Le safran de Taliouine, un goût qui illumine...</p>
+
+        <p>
+          <img
+            src="images/safran3.jpeg"
+            alt="Safran de Taliouine"
+            class="img"
+          >
+        </p>
+
+        <p class="texte">
+          Bienvenue sur notre site dédié au safran de Taliouine, l'un des joyaux
+          les plus précieux du Maroc. Ici, vous trouverez tout ce qu'il faut
+          savoir sur cette épice exceptionnelle : son histoire, ses utilisations
+          et les traditions uniques de la région.
+        </p>
+        <p class="texte">
+          Ce site est conçu pour vous offrir une expérience riche et agréable.
+          Que vous soyez curieux d'en apprendre davantage sur le patrimoine
+          culturel de Taliouine, intéressé par les bienfaits du safran ou à la
+          recherche d'idées de recettes, vous êtes au bon endroit !
+        </p>
+
+        <p class="texte">Explorez les différentes sections :</p>
+        <ul>
+          <li>
+            <strong>Utilisations et bienfaits :</strong> Apprenez comment
+            intégrer le safran dans votre quotidien, que ce soit en cuisine, en
+            cosmétique ou pour votre santé.
+          </li>
+          <li>
+            <strong>Découvrir Taliouine :</strong> Plongez dans la beauté et le
+            patrimoine unique de cette région emblématique.
+          </li>
+          <li>
+            <strong>À propos :</strong> Découvrez l'histoire fascinante du
+            safran et les traditions des cultivateurs locaux.
+          </li>
+          <li>
+            <strong>Contact :</strong> N'hésitez pas à nous écrire pour toute
+            question ou pour partager votre expérience.
+          </li>
+        </ul>
+
+        <p class="texte">
+          Nous espérons que votre visite vous inspirera et vous fera découvrir
+          la richesse du safran de Taliouine. Bonne exploration et merci de
+          soutenir ce trésor culturel unique !
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p class="footer">&copy; 2025 - L'Or Rouge de Taliouine</p>
+    </footer>
+  </body>
+</html>

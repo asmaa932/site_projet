@@ -1,0 +1,178 @@
+/* Style général du site */
+body {
+    font-family: Arial, serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Mise en page générale */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #2f0606;
+    color: #fff;
+    padding: 40px 10px;
+    text-align: center;
+    border: 5px solid #B22222;
+}
+
+/* Footer */
+.footer {
+    background-color: #2f0606;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: 40px;
+    border: 5px solid #B22222;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1, h2 {
+    color: #B22222;
+    text-align: center;
+}
+
+p {
+    margin: 10px 20px;
+    text-align: left;
+}
+
+/* Images */
+.img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin: 20px auto;
+    border: 3px solid #B22222;
+    border-radius: 4px;
+    display: block;
+}
+
+/* Formulaires */
+form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+form input[type="submit"] {
+    background-color: #B22222;
+    color: #fff;
+    border: none;
+    padding: 12px 18px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: lightgrey;
+    color: black;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header, .footer {
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .img {
+        max-width: 100%;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+        margin: 5px 10px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    form {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    form input[type="submit"] {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
+

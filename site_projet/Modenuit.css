@@ -1,0 +1,110 @@
+/* Style général du site */
+body.nightMode {
+  background-color: #2b2b2b;
+  color: #e8e8e8;
+}
+
+body.nightMode header {
+  background-color: #4a2323;
+  color: #fff;
+  border: 5px solid #8b0000;
+}
+
+body.nightMode .footer {
+  background-color: #4a2323;
+  color: #f0f0f0;
+  border: 5px solid #8b0000;
+}
+
+body.nightMode header nav ul li a {
+  color: #ffffff;
+}
+
+body.nightMode header nav ul li a:hover {
+  text-decoration: underline;
+  color: #ffd27f;
+}
+
+/* Boutons */
+body.nightMode .zoom-button button,
+body.nightMode .change-style button {
+  border: solid #555 2px;
+  background-color: #4a4a4a;
+  color: #e8e8e8;
+}
+
+body.nightMode .zoom-button button:hover,
+body.nightMode .change-style button:hover {
+  background-color: #545454;
+  color: #ffffff;
+}
+
+/* Contenu principal */
+body.nightMode main {
+  background-color: #3a3a3a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+body.nightMode h1,
+body.nightMode h2 {
+  color: #FFB3B3;
+}
+
+body.nightMode p {
+  color: #e8e8e8;
+}
+
+body.nightMode ul li {
+  color: #e8e8e8;
+}
+
+/* Barre de recherche */
+body.nightMode .search-bar input {
+  background-color: #fffafa;
+  color: #ffffff;
+  border: 1px solid #8b0000;
+}
+
+body.nightMode .search-bar input:focus {
+  border-color: #f4c542;
+  box-shadow: 0 0 8px rgba(244, 197, 66, 0.6);
+}
+
+body.nightMode .search-bar button {
+  background-color: #8b0000;
+  color: #fff;
+}
+
+body.nightMode .search-bar button:hover {
+  background-color: #b22222;
+}
+
+/* Formulaire */
+body.nightMode form {
+  background-color: #2b2b2b; /* Arrière-plan plus sombre pour le contraste */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  color: #ffffff; /* Texte clair pour le contraste */
+}
+
+body.nightMode form h2 {
+  color: #f4c542; /* Couleur conservée, contraste suffisant sur #2b2b2b */
+}
+
+body.nightMode form input[type="text"],
+body.nightMode form input[type="email"],
+body.nightMode form textarea {
+  background-color: #1e1e1e; /* Fond plus sombre pour un contraste renforcé */
+  color: #ffffff; /* Texte clair pour le contraste */
+  border: 1px solid #f4c542; /* Bordure jaune dorée pour un contraste clair */
+}
+
+body.nightMode form input[type="submit"] {
+  background-color: #f4c542; /* Bouton avec couleur vive pour ressortir */
+  color: #2b2b2b; /* Texte sombre pour le contraste */
+  border: none;
+}
+
+body.nightMode form input[type="submit"]:hover {
+  background-color: #ffd700; /* Jaune encore plus vif pour le survol */
+  color: #2b2b2b; /* Texte sombre conservé */
+}
