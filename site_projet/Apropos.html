@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta
+      name="description"
+      content="Découvrez le trésor ancestral du Maroc : le safran de Taliouine."
+    >
+    <title>Accueil - L'Or Rouge de Taliouine</title>
+
+    <!-- Inclusion des fichiers CSS -->
+    <link rel="stylesheet" href="Defaut.css" >
+    <link
+      rel="alternate stylesheet"
+      type="text/css"
+      href="Print.css"
+      title="Print"
+    >
+    <link
+      rel="alternate stylesheet"
+      type="text/css"
+      href="Modenuit.css"
+      title="Mode Sombre"
+    >
+    <link
+      rel="alternate stylesheet"
+      type="text/css"
+      href="Minimal.css"
+      title="Minimal"
+    >
+
+    <script src="Script.js" defer></script>
+    <script src="Recherche.js" defer></script>
+    <script src="Script_mode.js" defer></script>
+    <!-- print et minimal -->
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="listheader">
+          <li><a href="Accueil.html">Accueil</a></li>
+          <li><a href="Utilisation.html">Utilisations et bienfaits</a></li>
+          <li><a href="Decouvrir.html">Découvrir Taliouine</a></li>
+          <li><a href="Apropos.html">À propos</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Barre de recherche -->
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Rechercher..." >
+      <button id="search-button">Rechercher</button>
+    </div>
+
+    <!-- Boutons pour changer de style -->
+    <div class="change-style">
+      <button id="mode">Mode Jour/Nuit</button>
+      <button data-style="Minimal">Minimal</button>
+      <button data-style="Print">Impression</button>
+    </div>
+    <!-- Boutons zoom -->
+    <div class="zoom-button">
+      <button onclick="changeFontSize('increase')">Zoom +</button>
+      <button onclick="changeFontSize('decrease')">Zoom -</button>
+    </div>
+
+    <main>
+      <section class="apropos">
+        <h1>À propos de L'Or Rouge de Taliouine</h1>
+        <p>
+          Ce site a été conçu pour vous plonger au cœur de la région de
+          Taliouine, berceau de l'une des épices les plus précieuses au monde :
+          le safran.
+        </p>
+
+        <p>
+          Le safran de Taliouine est reconnu pour sa qualité exceptionnelle,
+          grâce à un savoir-faire ancestral transmis de génération en
+          génération. Sa production repose sur des étapes clés :
+        </p>
+        <h2>La culture</h2>
+        <p>
+          Le safran est cultivé dans des sols bien drainés et sous un climat
+          spécifique. Les bulbes de crocus sativus, la plante qui produit le
+          safran, sont plantés à la main pendant l'été, dans des champs
+          soigneusement entretenus.
+        </p>
+        <!--image champs safran-->
+
+        <h2>La récolte</h2>
+        <p>
+          La récolte du safran est une étape délicate, qui a lieu au petit
+          matin, entre octobre et novembre. Les fleurs violettes du crocus
+          sativus sont cueillies à la main avant l’ouverture complète des
+          pétales, afin de préserver leur qualité.
+        </p>
+
+        <h2>L'émondage</h2>
+        <p>
+          L’émondage consiste à séparer les stigmates rouges (le safran) des
+          autres parties de la fleur. Cette tâche, très minutieuse, est réalisée
+          à la main, ce qui garantit une grande pureté du produit final.
+        </p>
+        <p>
+          <img
+            src="images/recoltesafran.jpeg"
+            alt="emondage du safran"
+            class="img2"
+          >
+        </p>
+
+        <h2>Le séchage</h2>
+        <p>
+          Une fois les stigmates récoltés, ils sont rapidement séchés pour
+          conserver leurs propriétés. Cette étape est essentielle, car elle
+          influence directement la saveur, la couleur et les arômes du safran.
+        </p>
+
+        <h2>Le conditionnement</h2>
+        <p>
+          Le safran est ensuite trié et conditionné avec soin. À Taliouine,
+          cette étape est souvent réalisée dans de petites coopératives locales,
+          ce qui soutient les communautés rurales et leur économie.
+        </p>
+
+        <p>
+          Ce processus, entièrement artisanal, explique pourquoi le safran est
+          si précieux et souvent surnommé "l'or rouge".
+        </p>
+      </section>
+    </main>
+
+    <!--<div class="av-apbutton" >
+    <FORM METHOD="post">
+<INPUT TYPE="button" VALUE="Précédent"
+onClick="goHist(-1)">
+<INPUT TYPE="button" VALUE="Suivant"
+onClick="goHist(1)">
+</FORM>
+</div>-->
+
+    <footer>
+      <p class="footer">&copy; 2025 - L'Or Rouge de Taliouine</p>
+    </footer>
+  </body>
+</html>
